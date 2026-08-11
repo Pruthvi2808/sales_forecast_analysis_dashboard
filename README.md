@@ -101,7 +101,7 @@ Dashboard includes:
 
 ## 📄 Sales Forecasting Dashboard
 
-![Sales Forecasting Dashboard](sales_forecasting_dashboard.png)
+![Sales Forecasting Dashboard](sales_forecast_analysis.png)
 
 *Interactive Power BI dashboard showing sales trends, store performance, promotion and holiday impact, and 30-day ARIMA sales forecast.*
 
