@@ -71,7 +71,7 @@ Created interactive Power BI visuals to analyze sales performance, sales drivers
 
 ---
 
-# 📊 Dashboard Pages
+#  Dashboard Pages
 
 ## 📄 Page 1 – Sales Forecast Overview
 
@@ -104,7 +104,7 @@ The second dashboard page focuses on identifying sales drivers and understanding
 
 ---
 
-# 📈 Dashboard Metrics
+# 📊 Dashboard Metrics
 
 The dashboard provides analysis of:
 
