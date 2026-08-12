@@ -71,7 +71,7 @@ Created interactive Power BI visuals to analyze sales performance, sales drivers
 
 ---
 
-#  Dashboard Pages
+# 📈 Dashboard Pages
 
 ## 📄 Page 1 – Sales Forecast Overview
 
@@ -89,6 +89,8 @@ The first dashboard page provides an overview of sales performance and forecasti
 * **Holiday Impact on Sales**
 * **30-Day ARIMA Sales Forecast**
 
+Dashboard/Sales_Forecast_Overview.png
+
 ---
 
 ## 📄 Page 2 – Sales Drivers & Performance Analysis
@@ -102,6 +104,8 @@ The second dashboard page focuses on identifying sales drivers and understanding
 * **Store Performance vs Sales Variability**
 * **Average Sales by Weekday**
 
+  Dashboard/Advanced_Sales_Analytics.png
+  
 ---
 
 # 📊 Dashboard Metrics
