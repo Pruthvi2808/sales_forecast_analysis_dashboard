@@ -89,7 +89,7 @@ The first dashboard page provides an overview of sales performance and forecasti
 * **Holiday Impact on Sales**
 * **30-Day ARIMA Sales Forecast**
 
-Dashboard/Sales_Forecast_Overview.png
+![Sales Forecast Overview](Dashboard/Sales_Forecast_Overview.png)
 
 ---
 
@@ -104,7 +104,7 @@ The second dashboard page focuses on identifying sales drivers and understanding
 * **Store Performance vs Sales Variability**
 * **Average Sales by Weekday**
 
-  Dashboard/Advanced_Sales_Analytics.png
+![Advanced Sales Analytics](Dashboard/Advanced_Sales_Analytics.png)
   
 ---
 
