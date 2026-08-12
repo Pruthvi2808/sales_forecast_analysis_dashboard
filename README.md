@@ -2,223 +2,196 @@
 
 ## 📌 Project Overview
 
-The Sales Forecasting Dashboard is an interactive Business Intelligence and Time Series Analysis solution built using **Power BI, 
-Python (ARIMA), Power Query, and DAX**. The project analyzes **1,000 days of daily sales data** across **3 retail stores** to evaluate 
-sales trends, store performance, promotional and holiday impact, weekday patterns, and future revenue through a **30-day ARIMA sales forecast**.
+The Sales Forecasting Dashboard is an interactive **Business Intelligence and Data Analytics solution** developed using **Power BI, DAX, Power Query, and ARIMA forecasting**. The dashboard analyzes historical retail sales data to understand overall sales performance, store-level performance, sales trends, promotion and holiday impact, weekday patterns, and future sales forecasts.
 
 ---
 
 # 🎯 Problem Statement
 
-Retail businesses often experience fluctuations in daily sales, making inventory planning, promotional decisions, and revenue forecasting challenging. 
-Relying on historical trends alone may result in stock shortages, excess inventory, and ineffective promotional planning.
+Retail businesses need to understand historical sales performance and identify the factors influencing sales in order to make better business decisions.
 
-This dashboard provides an interactive platform to analyze:
+This Power BI dashboard provides interactive analysis of:
 
+* Overall Sales Performance
 * Sales Trends Over Time
 * Store-wise Sales Performance
 * Promotion Impact on Sales
 * Holiday Impact on Sales
 * Weekday Sales Patterns
-* Historical Sales Performance
-* 30-Day Forward Sales Forecast using ARIMA
-
----
-
-# 📂 Dataset Information
-
-| Attribute        | Details                                            |
-| ---------------- | -------------------------------------------------- |
-| Dataset          | ABC Retail Daily Sales Data                        |
-| Records          | **1,000**                                          |
-| Stores           | **3**                                              |
-| Time Period      | **1 Jan 2020 – 26 Sep 2022**                       |
-| Key Variables    | Daily Sales, Store ID, Promotion, Holiday, Weekday |
-| Forecast Records | **30**                                             |
-| Forecast Period  | **10 Dec 2022 – 8 Jan 2023**                       |
-| File Type        | CSV                                                |
+* Cumulative Sales Growth
+* Sales Variability
+* Sales Drivers
+* 30-Day ARIMA Sales Forecast
 
 ---
 
 # 🛠 Technologies Used
 
 * Power BI Desktop
+* DAX
+* Power Query
 * Python
 * ARIMA
-* Power Query
-* DAX
+* Data Visualization
 
 ---
 
 # 🔄 Project Workflow
 
-### Step 1
+### Step 1 – Data Preparation
 
-Imported **1,000 days of daily retail sales data** containing sales revenue, store information, promotional activity, holiday indicators, and weekday information.
+Imported the retail sales dataset into Power BI and prepared the data for analysis.
 
-### Step 2
+### Step 2 – Data Transformation
 
-Performed **Exploratory Data Analysis (EDA)** using Python to identify missing values, outliers, inconsistencies, sales fluctuations, trends, and recurring patterns.
+Used **Power Query** for data cleaning, transformation, and data type validation.
 
-### Step 3
+### Step 3 – Data Modeling
 
-Analyzed historical sales performance across different stores and evaluated daily, weekly, monthly, promotional, holiday, and weekday sales patterns.
+Created the required data model and prepared fields such as date, store, promotion, holiday, month, and weekday for analysis.
 
-### Step 4
+### Step 4 – DAX Development
 
-Developed an **ARIMA time series forecasting model in Python** using historical sales data to generate a **30-day forward sales forecast**.
+Created DAX measures to calculate key business metrics such as:
 
-### Step 5
+* Total Sales
+* Average Sales
+* Number of Stores
+* Promotion Sales
+* Cumulative Sales
+* Sales Standard Deviation
 
-Stored the generated forecast results in the `forecast_results` dataset and prepared the historical and forecast data for Power BI integration.
+### Step 5 – Forecast Integration
 
-### Step 6
+Integrated the **ARIMA forecast results** into Power BI to visualize the expected sales for the next 30 days.
 
-Imported the datasets into **Power BI Desktop** and used **Power Query** for data transformation, data type validation, and data preparation.
+### Step 6 – Dashboard Development
 
-### Step 7
-
-Created data models and **DAX measures** including Total Sales, Average Sales, Promotion Sales, and Number of Stores to support interactive dashboard analysis.
-
-### Step 8
-
-Developed an interactive **Power BI dashboard** with KPI cards, sales trends, store comparisons, promotion and holiday analysis, and a 30-day ARIMA forecast.
-
-### Step 9
-
-Published the completed report to **Power BI Service** for interactive stakeholder reporting and business analysis.
+Created interactive Power BI visuals to analyze sales performance, sales drivers, store performance, sales variability, weekday patterns, and future sales forecasts.
 
 ---
 
-# 📈 Dashboard Pages
+# 📊 Dashboard Pages
 
 ## 📄 Page 1 – Sales Forecast Overview
 
-Dashboard includes:
+The first dashboard page provides an overview of sales performance and forecasting.
 
-* Total Sales KPI
-* Average Daily Sales KPI
-* Number of Stores KPI
-* Promotion Sales KPI
-* Historical Sales Trend
-* 30-Day ARIMA Sales Forecast
+### Key Visuals
 
----
-
-## 📄 Page 2 – Store Performance Analysis
-
-Dashboard includes:
-
-* Store-wise Sales Comparison
-* Total Sales by Store
-* Average Sales by Store
-* Store Performance Trends
-* Historical Store Performance
+* **Total Sales KPI**
+* **Average Sales KPI**
+* **Number of Stores KPI**
+* **Promotion Sales KPI**
+* **Sales Trend Over Time**
+* **Sales by Store**
+* **Promotion Impact on Sales**
+* **Holiday Impact on Sales**
+* **30-Day ARIMA Sales Forecast**
 
 ---
 
-## 📄 Page 3 – Promotion & Holiday Analysis
+## 📄 Page 2 – Sales Drivers & Performance Analysis
 
-Dashboard includes:
+The second dashboard page focuses on identifying sales drivers and understanding sales performance.
 
-* Promotion vs Non-Promotion Sales
-* Holiday vs Non-Holiday Sales
-* Promotion Impact on Average Sales
-* Holiday Impact on Average Sales
-* Promotional Day Analysis
+### Key Visuals
 
----
-
-## 📄 Page 4 – Sales Pattern Analysis
-
-Dashboard includes:
-
-* Weekday Sales Performance
-* Daily Sales Trends
-* Monthly Sales Patterns
-* Sales Fluctuation Analysis
-* Historical Growth Trends
+* **Sales Drivers Analysis using Decomposition Tree**
+* **Cumulative Sales Growth**
+* **Store Performance vs Sales Variability**
+* **Average Sales by Weekday**
 
 ---
 
-## 📄 Page 5 – Forecast Analysis
+# 📈 Dashboard Metrics
 
-Dashboard includes:
-
-* 30-Day ARIMA Forecast
-* Forecasted Daily Sales
-* Forecast Average
-* Minimum Forecast Value
-* Maximum Forecast Value
-* Historical vs Forecast Trend
-
----
-
-# 📊 Dashboard Metrics
-
-The dashboard provides interactive analysis of:
+The dashboard provides analysis of:
 
 * Total Sales
-* Average Daily Sales
+* Average Sales
 * Number of Stores
 * Promotion Sales
-* Promotional Days
-* Holiday Days
-* Highest Single-Day Sales
-* Lowest Single-Day Sales
+* Cumulative Sales
+* Sales Variability
 * Store-wise Sales
-* Weekday Sales
-* 30-Day Forecast Average
-* Forecast Range
+* Promotion vs Non-Promotion Sales
+* Holiday vs Non-Holiday Sales
+* Weekday Sales Performance
+* 30-Day Sales Forecast
 
 ---
 
-# 📉 Key Insights
+# 🔍 Key Analysis
 
-* **Store 2** recorded the highest total sales at **$104,461.54**, followed by Store 1 at **$102,250.73** and Store 3 at **$93,923.69**.
-* **Holiday periods** generated average sales of **$307.41**, compared with **$299.99** during non-holiday periods, representing a **2.47% increase**.
-* **Promotional days** recorded average sales of **$301.82**, compared with **$300.11** on non-promotional days, indicating a relatively small **0.57% increase**.
-* **Tuesday** was the strongest weekday with average sales of **$303.16**, while **Friday** recorded the lowest average at **$296.40**.
-* Average daily sales increased from **$174.10 in 2020** to **$319.82 in 2021** and **$446.77 in 2022**, indicating a strong upward sales trend.
-* The **ARIMA model** forecasted average daily sales of **$457.46** over the 30-day forecast period, with predicted values ranging from **$442.44 to $482.18**.
+### Store Performance
+
+The dashboard compares sales performance across different stores to identify the strongest-performing stores and differences in sales contribution.
+
+### Promotion Analysis
+
+The dashboard compares sales during promotional and non-promotional periods to understand the relationship between promotions and sales.
+
+### Holiday Analysis
+
+Holiday and non-holiday sales are compared to identify differences in sales performance during holiday periods.
+
+### Weekday Analysis
+
+Average sales are analyzed across weekdays to identify stronger and weaker sales days.
+
+### Sales Variability
+
+Sales variability is analyzed across stores to understand differences between sales performance and consistency.
+
+### Sales Drivers
+
+The **Decomposition Tree** provides interactive drill-down analysis to identify factors contributing to sales performance.
+
+### Forecasting
+
+The dashboard integrates a **30-day ARIMA sales forecast** to visualize expected future sales based on historical sales patterns.
 
 ---
 
 # ✨ Features
 
+* Interactive Power BI Dashboard
+* KPI Cards
+* Sales Trend Analysis
+* Store-wise Sales Analysis
+* Promotion Analysis
+* Holiday Analysis
+* Weekday Analysis
+* Cumulative Sales Analysis
+* Sales Variability Analysis
+* Decomposition Tree for Sales Drivers
 * 30-Day ARIMA Sales Forecast
-* Interactive KPI Cards
-* Store-wise Sales Comparison
-* Promotion Impact Analysis
-* Holiday Impact Analysis
-* Weekday Sales Analysis
-* Historical Sales Trend Analysis
-* Dynamic DAX Measures
+* DAX Measures
 * Power Query Data Transformation
-* Interactive Power BI Visualizations
-* Power BI Service Publishing
+* Interactive Data Visualization
 
 ---
 
 # 📚 Skills Demonstrated
 
-* Exploratory Data Analysis
-* Time Series Analysis
-* ARIMA Forecasting
-* Python
-* Power Query
-* Data Cleaning & Transformation
-* Data Modeling
+* Power BI
 * DAX
-* Power BI Dashboard Development
+* Power Query
+* Data Cleaning
+* Data Transformation
+* Data Modeling
 * Data Visualization
 * Sales Analytics
-* Business & Revenue Analysis
+* Time Series Forecasting
+* ARIMA
+* Business Intelligence
+* Interactive Dashboard Development
 
 ---
 
 # 📌 Conclusion
 
-This project demonstrates an end-to-end **Data Analytics and Business Intelligence workflow** by analyzing **1,000 daily retail sales records** across 3 stores using **Python, ARIMA, Power Query, DAX, and Power BI**. It showcases data exploration, transformation, time series forecasting, data modeling, and interactive dashboard development to identify sales trends, store performance, promotional and holiday effects, and future revenue patterns.
+This project demonstrates an end-to-end **Business Intelligence and Data Analytics workflow** using Power BI, DAX, Power Query, and ARIMA forecasting. The dashboard enables users to analyze overall sales performance, compare stores, evaluate promotion and holiday effects, identify weekday patterns and sales drivers, understand sales variability, and view a 30-day sales forecast.
 
-With historical sales of **$300,635.96** and a **30-day ARIMA forecast averaging $457.46 per day**, the dashboard demonstrates how historical sales data and predictive analytics can support **inventory planning, promotional strategies, revenue forecasting, and data-driven business decision-making**.
+The project showcases how interactive Power BI dashboards and predictive analytics can transform historical sales data into meaningful insights for **sales analysis, performance evaluation, and future planning**.
